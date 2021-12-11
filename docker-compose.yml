@@ -1,0 +1,18 @@
+# Define the services/ containers to be run
+services:
+ angular:    # name of the first service
+  build: frontend    # specify the directory of the Dockerfile
+  ports:
+  - "4200:4200"    # specify port mapping
+ 
+ express: 
+  build: backend 
+  ports:
+  - "3000:3000" 
+  links:
+  - database:27017    # link this service to the database service
+ 
+ database: 
+  image: mongo    # specify image to build container from
+  ports:
+  - "27017:27017" 
