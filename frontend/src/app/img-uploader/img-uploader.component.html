@@ -1,0 +1,32 @@
+<div class="centered-content">
+  <div class="holder">
+
+    <div class="form-upload">
+
+      <h1>Upload your image</h1>
+
+      <div class="file is-right is-info is-medium">
+        <label class="file-label">
+          <input class="file-input" type="file" name="file" (change)="onFileSelected($event)" #inputField>
+          <span class="file-cta">
+            <span class="file-icon">
+              <i class="fas fa-upload"></i>
+            </span>
+            <span class="file-label">
+              Choose a file…
+            </span>
+          </span>
+          <span class="file-name" #filename>
+            No file uploaded
+          </span>
+        </label>
+      </div>
+
+      <button [disabled]="!selectedFile" type="button" class="button is-info is-medium"
+         (click)="onUpload()">Upload</button>
+      <a type="button" class="button is-info is-medium" routerLink="/">Movies</a>
+      <span #message style="display: block;"></span>
+
+    </div>
+  </div>
+</div>

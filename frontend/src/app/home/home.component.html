@@ -1,0 +1,32 @@
+<div class="centered-content">
+  <div class="holder">
+
+    <div class="form-upload">
+
+      <h1>All the movies</h1>
+      <div class="window">
+        <table class="table is-hoverable is-fullwidth is-bordered">
+          <thead>
+            <tr>
+              <th>Name </th>
+              <th>Rating</th>
+              <th>Year</th>
+              <th>Movie's Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let movie of movies">
+              <td>{{ movie.name }}</td>
+              <td>{{ movie.rating }}</td>
+              <td>{{ movie.year }}</td>
+              <td>{{ movie.age }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a type="button" class="button is-info is-medium" routerLink="/upload">Add</a>
+
+    </div>
+  </div>
+</div>

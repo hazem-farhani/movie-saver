@@ -1,0 +1,24 @@
+# dependencies
+/backend/node_modules
+/frontend/node_modules
+
+# profiling files
+/frontend/chrome-profiler-events*.json
+/frontend/speed-measure-plugin*.json
+
+# IDEs and editors
+/frontend/.idea
+/frontend.project
+/frontend.classpath
+/frontend.c9/
+/frontend*.launch
+/frontend.settings/
+/frontend*.sublime-workspace
+
+# IDE - VSCode
+/frontend.vscode/*
+/frontend!.vscode/settings.json
+/frontend!.vscode/tasks.json
+/frontend!.vscode/launch.json
+/frontend!.vscode/extensions.json
+/frontend.history/*
