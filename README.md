@@ -76,13 +76,13 @@ These are instructions to get a local copy up and running. <br>
   ```
 
 
-### Installation
+### Installation:
 
 1. Clone the repo
    ```sh
    git clone https://github.com/hazem-farhani/movie-saver.git
    ```
-2. Install NPM packages for both environment
+2. Install NPM packages for both environment:
    ```sh
    cd frontend
    npm install
@@ -90,6 +90,11 @@ These are instructions to get a local copy up and running. <br>
    ```sh
    cd backend
    npm install
+   ```
+
+Or alternatively you can run the application as docker containers:
+   ```sh
+   docker-compose up
    ```
 
 
